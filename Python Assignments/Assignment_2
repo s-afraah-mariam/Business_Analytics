@@ -1,0 +1,34 @@
+1. nth fib number
+num=int(input())
+f1=0
+f2=1
+if num==0:
+    print(f1)
+elif num==1:
+    print(f2)
+else:
+    for i in range(2,num+1):
+        fib=f2+f1
+        f2,f1=fib,f2 
+    print(fib)
+    
+    ---------------------------------------------------------------------------------------------------------
+2.Python Program for How to check if a given number is Fibonacci number?
+n=int(input("Enter the number: "))
+fib=0
+f1=1
+f2=1
+if n==0 or n==1:
+    print("Yes")
+else:
+    while fib<n:
+        fib=f2+f1
+        f2,f1=fib,f2
+    if fib==n:
+        print("Yes")
+    else:
+        print("No")
+ ----------------------------------------------------------------------------------------------------------
+ 
+ 3.for n\’th multiple of a number in Fibonacci Series
+ 
