@@ -1,1 +1,88 @@
+1.Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
+Soln:
+for i in range(1500,2701):
+    if(i%5==0 and i%7==0):
+        print(i,end=' ')
+--------------------------------------------------------------------------------------------------------------------------------------
+
+2.Python program to add two numbers
+a=int(input("enter 1st number"))
+b=int(input("enter 2st number"))
+print(a+b)
+----------------------------------------------------------------------------------------------------------------------------------------
+
+3.Maximum of two numbers in Python
+a=int(input("enter 1st number"))
+b=int(input("enter 2st number"))
+print(max(a,b) if a!=b else 'both are equal')
+---------------------------------------------------------------------------------------------------------------------------------------
+
+4.Python Program for factorial of a number
+n=int(input("enter a number"))
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+print(fact)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+5.Python Program for simple interest
+p,n,r=map(int,input().split())
+print(f'SI is' ,(p*n*r)/100)
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+6.Compound interest
+p,n,r=map(int,input().split())
+a=p*(1 + r/100)**n
+print(f'CI is' ,a-p)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+7.Python Program to check Armstrong Number
+n=input()
+l=len(n)
+num=n=int(n)
+s=0
+while(n!=0):
+    r=n%10
+    p=pow(r,l)
+    s+=p
+    n//=10
+if(num==s):
+    print('armstrong') 
+else:
+    print('not armstrong')
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8.Area of circle 
+import math
+radius=int(input())
+print(math.pi*radius*radius)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9.Python program to print all Prime numbers in an Interva
+x=int(input())
+y=int(input())
+for i in range(x,y+1):
+    if i>1:
+        for j in range(2,y+1):
+            if(i%j==0):
+                break
+            else:
+                print(i,end=" ")
+                break
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 10.Python program to check whether a number is Prime or not
+ x=int(input())
+flag=0
+if(x==1):
+    print('neither prime nor composite') 
+else:
+    for i in range(2,x):
+        if(x%i==0):
+            break
+        else: flag=1
+    print("prime") if flag==1 else print("composite")       
+    
+          
+
 
